@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="object.css">
+</head>
+<body onload="renderListStudent()">
+    <div class="form-student">
+        <h3>Thong tin sinh vien</h3>
+        <label>Ho va ten</label>
+        <input type="text" id="fullname">
+        <br>
+        <label>Ma hoc sinh</label>
+        <input type="text" id="code">
+        <br>
+        <label>Gmail</label>
+        <input type="text" id="mail">
+        <br>
+        <label>&nbsp;</label>
+        <button onclick="saveInfo()">Luu Lai</button>
+    </div>
+    
+    <div class="list-student" id="list-student">
+        <h3>Danh sach sinh vien</h3>
+        <table id="grid-student" width = "650" border="1" cellpadding = "0" cellpadding = "0">
+        </table>
+    </div>
+    <script src="object.js"></script>
+</body>
+</html>
